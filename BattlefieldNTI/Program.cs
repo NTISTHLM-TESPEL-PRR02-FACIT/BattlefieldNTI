@@ -1,5 +1,6 @@
 ﻿List<Student> students = new();
 
+// Get number of students
 int numStudents = -1;
 while (numStudents <= 0)
 {
@@ -8,9 +9,11 @@ while (numStudents <= 0)
   bool success = int.TryParse(numString, out numStudents);
 }
 
+// Get type of student
 Console.WriteLine("What kind of student? te/es/it");
 string studentType = Console.ReadLine();
 
+// Create students
 if (studentType == "te")
 {
   for (int i = 0; i < numStudents; i++)

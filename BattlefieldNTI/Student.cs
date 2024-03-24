@@ -7,6 +7,7 @@
 
   public string GetGrade(int competence)
   {
+    // Randomize grade
     int result = Random.Shared.Next(competence);
     if (result == 0)
     {
